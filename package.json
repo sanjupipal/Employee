@@ -1,0 +1,22 @@
+{
+  "name": "billeasy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "migrate": "npx knex migrate:latest --knexfile ./db/knexfile.js &&  npx knex seed:run --knexfile ./db/knexfile.js",
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "rollback":"npx knex migrate:rollback --knexfile ./db/knexfile.js --all"
+  },
+  "author": "sanju",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^14.2.0",
+    "express": "^4.17.2",
+    "knex": "^1.0.1",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.1"
+  }
+}
