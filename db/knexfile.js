@@ -1,6 +1,6 @@
 module.exports = {
   development: {
-    client: process.env.DB_CLIENT,
+    client: "postgresql",
     connection: {
       host: process.env.POSTGRES_HOST,
       database: process.env.POSTGRES_DB,
