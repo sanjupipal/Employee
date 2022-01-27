@@ -2,11 +2,12 @@ module.exports = {
   development: {
     client: "postgresql",
     connection: {
-      host: process.env.POSTGRES_HOST,
-      database: process.env.POSTGRES_DB,
-      user: process.env.POSTGRES_USER,
-      password: process.env.POSTGRES_PASSWORD,
-      port: process.env.POSTGRES_PORT,
+      host: "ec2-34-233-157-189.compute-1.amazonaws.com",
+      database: "ddf775dvbvngbu",
+      user: "sflnhxztaiqejq",
+      password:
+        "7e34bb64367cb921dcf0d6cba4e9bfadad2948164d053923658fa6a7609e1438",
+      port: 5432,
       ssl: { rejectUnauthorized: false },
     },
     seeds: {
